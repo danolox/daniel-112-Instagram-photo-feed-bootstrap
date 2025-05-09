@@ -1,0 +1,323 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Instagram feed Bootstrap</title>
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.0/font/bootstrap-icons.css">
+
+    <script src="https://kit.fontawesome.com/57c562ed93.js" crossorigin="anonymous"></script>
+</head>
+
+<body>
+
+    <!-- NAVBAR -->
+    <nav class="navbar navbar-expand-lg navbar-light bg-light sticky-top">
+
+        <div class="container-fluid">
+
+            <a class="navbar-brand" href="#"><i class="fa-brands fa-instagram"></i> Instagram</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+
+            <div class="collapse navbar-collapse" id="navbarNav">
+
+                <ul class="navbar-nav ms-auto">
+
+                    <li class="nav-item">
+                        <button class="btn btn-success" data-bs-toggle="modal" data-bs-target="#newPostModal">
+                            Create a new post
+                        </button>
+                    </li>
+
+
+                    <li class="nav-item dropdown ms-2">
+
+                        <button class="btn btn-secondary dropdown-toggle" type="button" data-bs-toggle="dropdown"
+                            aria-expanded="false">
+                            <i class="fa-solid fa-gear"></i>
+                        </button>
+
+                        <ul class="dropdown-menu dropdown-menu-end">
+                            <li><a class="dropdown-item" href="#">Profile</a></li>
+                            <li><a class="dropdown-item" href="#">Accesibility</a></li>
+                            <li><a class="dropdown-item" href="#">Privacy and Data</a></li>
+                            <li>
+                                <hr class="dropdown-divider">
+                            </li>
+                            <li><a class="dropdown-item text-danger" href="#">Log Out</a></li>
+                        </ul>
+                    </li>
+
+                </ul>
+
+
+            </div>
+
+        </div>
+    </nav>
+
+
+
+    <!-- NAV AND TAB - Javascript behaviour -->
+    <ul class="nav nav-tabs d-flex justify-content-center" id="myTab" role="tablist">
+
+        <li class="nav-item" role="presentation">
+            <button class="nav-link active" id="grid-tab" data-bs-toggle="tab" data-bs-target="#grid-tab-pane"
+                type="button" role="tab" aria-controls="grid-tab-pane" aria-selected="true"><i
+                    class="bi bi-grid-3x3"></i></button>
+        </li>
+
+        <li class="nav-item" role="presentation">
+            <button class="nav-link" id="feed-tab" data-bs-toggle="tab" data-bs-target="#feed-tab-pane" type="button"
+                role="tab" aria-controls="feed-tab-pane" aria-selected="false"><i
+                    class="fa-solid fa-square"></i></button>
+        </li>
+
+    </ul>
+
+
+    <!-- GRID -->
+    <div class="tab-content" id="myTabContent">
+
+        <div class="tab-pane fade show active text-center" id="grid-tab-pane" role="tabpanel" aria-labelledby="grid-tab" tabindex="0">
+
+            <div class="container-fluid mt-4 justify-content-evenly">
+
+            <div class="row row-cols-3 g-2">
+
+                <div class="col-4">
+                    <img src="images/imagen-1.jpg" class="img-fluid rounded" alt="imagen">
+                </div>
+
+                <div class="col-4">
+                    <img src="images/imagen-1.jpg" class="img-fluid rounded" alt="imagen">
+                </div>
+
+                <div class="col-4">
+                    <img src="images/imagen-1.jpg" class="img-fluid rounded" alt="imagen">
+                </div>
+            
+
+
+                <div class="col-4">
+                    <img src="images/imagen-2.jpg" class="img-fluid rounded" alt="imagen">
+                </div>
+
+                <div class="col-4">
+                    <img src="images/imagen-2.jpg" class="img-fluid rounded" alt="imagen">
+                </div>
+
+                <div class="col-4">
+                    <img src="images/imagen-2.jpg" class="img-fluid rounded" alt="imagen">
+                </div>
+
+
+                <div class="col-4">
+                    <img src="images/imagen-3.jpg" class="img-fluid rounded" alt="imagen">
+                </div>
+
+                <div class="col-4">
+                    <img src="images/imagen-3.jpg" class="img-fluid rounded" alt="imagen">
+                </div>
+
+                <div class="col-4">
+                    <img src="images/imagen-3.jpg" class="img-fluid rounded" alt="imagen">
+                </div>
+
+
+                <div class="col-4">
+                    <img src="images/imagen-4.jpg" class="img-fluid rounded" alt="imagen">
+                </div>
+
+                <div class="col-4">
+                    <img src="images/imagen-4.jpg" class="img-fluid rounded" alt="imagen">
+                </div>
+
+                <div class="col-4">
+                    <img src="images/imagen-4.jpg" class="img-fluid rounded" alt="imagen">
+                </div>
+
+
+                <div class="col-4">
+                    <img src="images/imagen-5.jpg" class="img-fluid rounded" alt="imagen">
+                </div>
+
+                <div class="col-4">
+                    <img src="images/imagen-5.jpg" class="img-fluid rounded" alt="imagen">
+                </div>
+
+                <div class="col-4">
+                    <img src="images/imagen-5.jpg" class="img-fluid rounded" alt="imagen">
+                </div>
+
+
+                <div class="col-4">
+                    <img src="images/imagen-6.jpg" class="img-fluid rounded" alt="imagen">
+                </div>
+
+                <div class="col-4">
+                    <img src="images/imagen-6.jpg" class="img-fluid rounded" alt="imagen">
+                </div>
+
+                <div class="col-4">
+                    <img src="images/imagen-6.jpg" class="img-fluid rounded" alt="imagen">
+                </div>
+
+            </div>
+
+            </div>
+        </div>
+
+
+        <!-- FEED -->
+        <div class="tab-pane fade text-center" id="feed-tab-pane" role="tabpanel" aria-labelledby="feed-tab"
+            tabindex="0">
+
+            <div class="container-fluid">
+
+                <div class="card mx-auto mt-4" style="width: 35rem;">
+                    <div class="card-header d-flex justify-content-between align-items-center">
+                        <h5 class="card-title">Card title</h5>
+                        <p>xx/yy</p>
+                    </div>
+                    <img src="images/imagen-1.jpg" alt="imagen">
+                    <div class="card-body text-start">
+                        <p><strong>343234 Likes</strong></p>
+                        <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Ducimus, aperiam.
+                        </p>
+                    </div>
+                </div>
+
+
+                <div class="card mx-auto mt-4" style="width: 35rem;">
+                    <div class="card-header d-flex justify-content-between align-items-center">
+                        <h5 class="card-title">Card title</h5>
+                        <p>xx/yy</p>
+                    </div>
+                    <img src="images/imagen-2.jpg" alt="imagen">
+                    <div class="card-body text-start">
+                        <p><strong>343234 Likes</strong></p>
+                        <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Ducimus, aperiam.
+                        </p>
+                    </div>
+                </div>
+
+
+                <div class="card mx-auto mt-4" style="width: 35rem;">
+                    <div class="card-header d-flex justify-content-between align-items-center">
+                        <h5 class="card-title">Card title</h5>
+                        <p>xx/yy</p>
+                    </div>
+                    <img src="images/imagen-3.jpg" alt="imagen">
+                    <div class="card-body text-start">
+                        <p><strong>343234 Likes</strong></p>
+                        <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Ducimus, aperiam.
+                        </p>
+                    </div>
+                </div>
+
+
+                <div class="card mx-auto mt-4" style="width: 35rem;">
+                    <div class="card-header d-flex justify-content-between align-items-center">
+                        <h5 class="card-title">Card title</h5>
+                        <p>xx/yy</p>
+                    </div>
+                    <img src="images/imagen-4.jpg" alt="imagen">
+                    <div class="card-body text-start">
+                        <p><strong>343234 Likes</strong></p>
+                        <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Ducimus, aperiam.
+                        </p>
+                    </div>
+                </div>
+
+
+                <div class="card mx-auto mt-4" style="width: 35rem;">
+                    <div class="card-header d-flex justify-content-between align-items-center">
+                        <h5 class="card-title">Card title</h5>
+                        <p>xx/yy</p>
+                    </div>
+                    <img src="images/imagen-5.jpg" alt="imagen">
+                    <div class="card-body text-start">
+                        <p><strong>343234 Likes</strong></p>
+                        <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Ducimus, aperiam.
+                        </p>
+                    </div>
+                </div>
+
+
+                <div class="card mx-auto mt-4" style="width: 35rem;">
+                    <div class="card-header d-flex justify-content-between align-items-center">
+                        <h5 class="card-title">Card title</h5>
+                        <p>xx/yy</p>
+                    </div>
+                    <img src="images/imagen-6.jpg" alt="imagen">
+                    <div class="card-body text-start">
+                        <p><strong>343234 Likes</strong></p>
+                        <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Ducimus, aperiam.
+                        </p>
+                    </div>
+                </div>
+
+            </div>
+
+        </div>
+    </div>
+
+
+
+    <!-- Modal -->
+    <div class="modal fade" id="newPostModal" tabindex="-1" aria-labelledby="newPostModalLabel" aria-hidden="true">
+
+        <div class="modal-dialog">
+
+            <div class="modal-content">
+
+                <div class="modal-header">
+                    <h5 class="modal-title" id="newPostModalLabel">Create a new post</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+
+                <div class="modal-body">
+
+                    <div class="mb-3">
+                        <label for="postCaption" class="form-label"><strong>Caption:</strong></label>
+                        <textarea class="form-control" id="postCaption" rows="2"
+                            placeholder="Add the caption of your post here"></textarea>
+                    </div>
+
+                    <div>
+
+                        <button type="button" class="btn btn-light">
+                            <i class="fa-solid fa-camera"></i>
+                        </button>
+
+                        <button type="button" class="btn btn-light">
+                            <i class="fa-solid fa-location-dot"></i>
+                        </button>
+                    </div>
+                </div>
+
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                    <button type="button" class="btn btn-success">Publish</button>
+                </div>
+
+            </div>
+        </div>
+    </div>
+
+
+    <footer class="bg-light text-white pt-4 pb-2"></footer>
+
+    <!-- Bootstrap JS Bundle with Popper -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+
+</html>
